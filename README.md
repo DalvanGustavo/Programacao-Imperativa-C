@@ -4,7 +4,9 @@
 
 Na Lista 1, o foco principal foi o aprimoramento do uso de **estruturas de decisão (if/else)**, **operações matemáticas** e **lógica de programação** aplicada a diferentes cenários. Abaixo, um breve resumo dos problemas resolvidos:
 
-* **Problema 1 (Calculadora de Sorte/Horóscopo):** * **O que aprendi/pratiquei:** Manipulação de múltiplas variáveis de data, uso intensivo do operador módulo (`%`) para gerar índices, e aplicação de blocos `if/else` encadeados para categorizar resultados (amor, sorte, trabalho e cor).
+### O que aprendi/pratiquei:
+
+* **Problema 1 (Calculadora de Sorte/Horóscopo):** Manipulação de múltiplas variáveis de data, uso intensivo do operador módulo (`%`) para gerar índices, e aplicação de blocos `if/else` encadeados para categorizar resultados (amor, sorte, trabalho e cor).
 * **Problema 2 (Soma de Múltiplos com Inclusão-Exclusão):**
     * **O que aprendi/pratiquei:** Uso do tipo `long long` para evitar *overflow* ao lidar com números grandes. Aplicação de otimização matemática (fórmulas de PA e princípio da inclusão-exclusão) no lugar de loops (`for`/`while`) para garantir a eficiência do código.
 * **Problema 3 (Investimentos da Rebeka):**
@@ -15,8 +17,10 @@ Na Lista 1, o foco principal foi o aprimoramento do uso de **estruturas de decis
 **Reflexão geral:** Sinto que meu domínio sobre o controle de fluxo (`if/else`) e a tradução de regras matemáticas para o código em C evoluiu bastante com esta lista.
 
 
-
+---
 Na Lista 2, os desafios subiram de nível, focando em **laços de repetição (loops)**, **teoria dos números** e **simulação de algoritmos**. Foi o momento de colocar o `for` e o `while` para trabalhar pesado.
+
+### O que aprendi/pratiquei:
 
 * **Problema 1 (Triângulo de Letras):**
     * **O que aprendi/pratiquei:** Manipulação avançada de loops aninhados para criar padrões geométricos. Trabalhei com a aritmética de `char` para imprimir sequências alfabéticas crescentes e decrescentes e utilizei lógica de preenchimento (pontos) para garantir a simetria.
@@ -29,11 +33,10 @@ Na Lista 2, os desafios subiram de nível, focando em **laços de repetição (l
 
 **Reflexão geral:** O uso de loops aninhados e a necessidade de controlar o estado das variáveis a cada iteração foram os pontos mais exigentes. A depuração (debug) de lógica de repetição tornou-se uma ferramenta essencial aqui.
 
-
+---
 
 Na Lista 3, o foco saiu das variáveis simples e entrou na manipulação de **coleções de dados (Arrays)** e **cadeias de caracteres (Strings)**. Os desafios exigiram maior cuidado com índices e lógica de memória.
 
----
 
 ### O que aprendi/pratiquei:
 
@@ -53,15 +56,14 @@ Na Lista 3, o foco saiu das variáveis simples e entrou na manipulação de **co
     * **Lógica:** Implementei um **somador binário manual** aplicado a uma string, tratando caracteres como bits e gerenciando o "vai um" (*carry*). Além disso, manipulei uma string gigante com lógica de concatenação baseada em regras de paridade.
     * **Conceito chave:** Aritmética binária em strings e manipulação de grandes buffers de texto.
 
----
 
 **Reflexão geral:** A maior dificuldade desta lista não foi apenas a lógica matemática, mas o **gerenciamento dos índices**. Um pequeno erro de `i + 1` ou esquecer o `\0` no final de uma string pode quebrar o código inteiro. Sinto que minha atenção aos detalhes e minha habilidade de debugar vetores melhoraram significativamente.
 
 
+---
 
 Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de listas simples e entrou no domínio das **Matrizes (Grids)**, explorando como navegar em duas dimensões e como implementar algoritmos clássicos de busca e simulação.
 
----
 
 ### O que aprendi/pratiquei:
 
@@ -81,15 +83,13 @@ Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de list
     * **Lógica:** Percorrimento de matriz com análise de vizinhos. Para cada poste (`P`), o algoritmo aplica regras de preenchimento ao redor (cruz vs. diagonal), lidando com **prioridades de sobrescrita**.
     * **Conceito chave:** Varredura de matriz e vetores de direção (offset) para acessar elementos adjacentes.
 
----
-
 **Reflexão geral:** Trabalhar com matrizes me mostrou como a organização dos dados facilita a resolução de problemas complexos. A parte mais desafiadora foi a **Alocação Dinâmica** no Problema 1 — entender que cada linha precisa ser alocada individualmente e liberada na ordem inversa — e o controle de limites para evitar o erro de *segmentation fault* ao acessar vizinhos fora do mapa. Utilizei I.A para completar tarefas, e, pela recomendação da I.A, conheci os ponteiros.
 
 
+---
 
 Na Lista 5, o foco foi dominar o ciclo de vida da memória em C: **Alocar (`malloc`), Realocar (`realloc`) e Liberar (`free`)**. Deixamos de depender de tamanhos pré-definidos para criar programas que se adaptam ao volume de dados em tempo real.
 
----
 
 ### O que aprendi/pratiquei:
 
@@ -105,9 +105,8 @@ Na Lista 5, o foco foi dominar o ciclo de vida da memória em C: **Alocar (`mall
     * **Lógica:** Implementação de um padrão clássico da computação: o **vetor dinâmico com crescimento exponencial**. Em vez de alocar um espaço gigante de uma vez, os vetores começam pequenos e dobram de capacidade (`capacidade * 2`) sempre que ficam cheios.
     * **Conceito chave:** Leitura até o fim do arquivo (`EOF`) e gerenciamento eficiente de capacidade de memória para evitar múltiplas chamadas caras ao sistema operacional.
 
----
 
 **Reflexão geral:** A alocação dinâmica é, sem dúvida, um divisor de águas. É onde o programador C ganha controle total (e responsabilidade total) sobre o hardware. O maior aprendizado aqui foi a disciplina: para cada `malloc`, deve haver um `free`. O uso do `realloc` me mostrou na prática como estruturas de dados famosas de outras linguagens funcionam por baixo dos panos.
 
-
-##***Em todas as listas utilizei I.A para tirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica***
+---
+***Em todas as listas utilizei I.A para tirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica***
