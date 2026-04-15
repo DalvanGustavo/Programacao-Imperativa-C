@@ -1,6 +1,6 @@
 # Programação Imperativa (C)
 
-# 📔 Diário de Bordo 
+# Diário de Bordo 
 
 Na Lista 1, o foco principal foi o aprimoramento do uso de **estruturas de decisão (if/else)**, **operações matemáticas** e **lógica de programação** aplicada a diferentes cenários. Abaixo, um breve resumo dos problemas resolvidos:
 
@@ -35,7 +35,7 @@ Na Lista 3, o foco saiu das variáveis simples e entrou na manipulação de **co
 
 ---
 
-### 🚀 O que aprendi/pratiquei:
+### O que aprendi/pratiquei:
 
 * **Problema 1 (Segmentos Decrescentes):**
     * **Lógica:** Pratiquei a busca por padrões dentro de um vetor, utilizando variáveis de controle para "salvar" o melhor estado (início e tamanho da maior sequência) enquanto o laço percorre os dados.
@@ -55,8 +55,7 @@ Na Lista 3, o foco saiu das variáveis simples e entrou na manipulação de **co
 
 ---
 
-### 💡 Reflexão Geral:
-A maior dificuldade desta lista não foi apenas a lógica matemática, mas o **gerenciamento dos índices**. Um pequeno erro de `i + 1` ou esquecer o `\0` no final de uma string pode quebrar o código inteiro. Sinto que minha atenção aos detalhes e minha habilidade de debugar vetores melhoraram significativamente.
+**Reflexão geral:** A maior dificuldade desta lista não foi apenas a lógica matemática, mas o **gerenciamento dos índices**. Um pequeno erro de `i + 1` ou esquecer o `\0` no final de uma string pode quebrar o código inteiro. Sinto que minha atenção aos detalhes e minha habilidade de debugar vetores melhoraram significativamente.
 
 
 
@@ -64,7 +63,7 @@ Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de list
 
 ---
 
-### 🚀 O que aprendi/pratiquei:
+### O que aprendi/pratiquei:
 
 * **Problema 1 (Labirinto com BFS):**
     * **Lógica:** Implementação do algoritmo **BFS (Breadth-First Search)** para encontrar o caminho mais curto em um mapa. Foi necessário gerenciar uma fila manual e controlar estados de "visitado" para evitar loops infinitos.
@@ -84,8 +83,7 @@ Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de list
 
 ---
 
-### 💡 Reflexão Geral:
-Trabalhar com matrizes me mostrou como a organização dos dados facilita a resolução de problemas complexos. A parte mais desafiadora foi a **Alocação Dinâmica** no Problema 1 — entender que cada linha precisa ser alocada individualmente e liberada na ordem inversa — e o controle de limites para evitar o erro de *segmentation fault* ao acessar vizinhos fora do mapa. Utilizei I.A para completar tarefas, e, pela recomendação da I.A, conheci os ponteiros.
+**Reflexão geral:** Trabalhar com matrizes me mostrou como a organização dos dados facilita a resolução de problemas complexos. A parte mais desafiadora foi a **Alocação Dinâmica** no Problema 1 — entender que cada linha precisa ser alocada individualmente e liberada na ordem inversa — e o controle de limites para evitar o erro de *segmentation fault* ao acessar vizinhos fora do mapa. Utilizei I.A para completar tarefas, e, pela recomendação da I.A, conheci os ponteiros.
 
 
 
@@ -93,7 +91,7 @@ Na Lista 5, o foco foi dominar o ciclo de vida da memória em C: **Alocar (`mall
 
 ---
 
-### 🚀 O que aprendi/pratiquei:
+### O que aprendi/pratiquei:
 
 * **Problema 1 (Evolução de Ornitorrincos):**
     * **Lógica:** Manipulação complexa de strings usando um array de ponteiros (`char **`). Implementei dois algoritmos: a **mesclagem** (intercalar caracteres de várias strings) e a **fusão** (uma lógica recursiva/iterativa onde letras iguais adjacentes "evoluem" para a próxima letra do alfabeto).
@@ -109,8 +107,7 @@ Na Lista 5, o foco foi dominar o ciclo de vida da memória em C: **Alocar (`mall
 
 ---
 
-### 💡 Reflexão Geral:
-A alocação dinâmica é, sem dúvida, um divisor de águas. É onde o programador C ganha controle total (e responsabilidade total) sobre o hardware. O maior aprendizado aqui foi a disciplina: para cada `malloc`, deve haver um `free`. O uso do `realloc` me mostrou na prática como estruturas de dados famosas de outras linguagens funcionam por baixo dos panos.
+**Reflexão geral:** A alocação dinâmica é, sem dúvida, um divisor de águas. É onde o programador C ganha controle total (e responsabilidade total) sobre o hardware. O maior aprendizado aqui foi a disciplina: para cada `malloc`, deve haver um `free`. O uso do `realloc` me mostrou na prática como estruturas de dados famosas de outras linguagens funcionam por baixo dos panos.
 
 
-**Em todas as listas utilizei I.A para tirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica**
+##***Em todas as listas utilizei I.A para tirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica***
