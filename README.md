@@ -58,8 +58,6 @@ Na Lista 3, o foco saiu das variáveis simples e entrou na manipulação de **co
 ### 💡 Reflexão Geral:
 A maior dificuldade desta lista não foi apenas a lógica matemática, mas o **gerenciamento dos índices**. Um pequeno erro de `i + 1` ou esquecer o `\0` no final de uma string pode quebrar o código inteiro. Sinto que minha atenção aos detalhes e minha habilidade de debugar vetores melhoraram significativamente.
 
-**Em todas as listas utilizei I.A para dirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica**
-
 
 
 Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de listas simples e entrou no domínio das **Matrizes (Grids)**, explorando como navegar em duas dimensões e como implementar algoritmos clássicos de busca e simulação.
@@ -88,3 +86,31 @@ Na Lista 4, o nível de abstração subiu consideravelmente. O foco saiu de list
 
 ### 💡 Reflexão Geral:
 Trabalhar com matrizes me mostrou como a organização dos dados facilita a resolução de problemas complexos. A parte mais desafiadora foi a **Alocação Dinâmica** no Problema 1 — entender que cada linha precisa ser alocada individualmente e liberada na ordem inversa — e o controle de limites para evitar o erro de *segmentation fault* ao acessar vizinhos fora do mapa. Utilizei I.A para completar tarefas, e, pela recomendação da I.A, conheci os ponteiros.
+
+
+
+Na Lista 5, o foco foi dominar o ciclo de vida da memória em C: **Alocar (`malloc`), Realocar (`realloc`) e Liberar (`free`)**. Deixamos de depender de tamanhos pré-definidos para criar programas que se adaptam ao volume de dados em tempo real.
+
+---
+
+### 🚀 O que aprendi/pratiquei:
+
+* **Problema 1 (Evolução de Ornitorrincos):**
+    * **Lógica:** Manipulação complexa de strings usando um array de ponteiros (`char **`). Implementei dois algoritmos: a **mesclagem** (intercalar caracteres de várias strings) e a **fusão** (uma lógica recursiva/iterativa onde letras iguais adjacentes "evoluem" para a próxima letra do alfabeto).
+    * **Conceito chave:** Ponteiros para ponteiros, aritmética de ponteiros e o uso de `malloc` para strings de tamanhos variados.
+
+* **Problema 2 (Relatório Estatístico de Notas):**
+    * **Lógica:** Criação de um sistema modular para calcular estatísticas (Média, Mediana, Moda, Maior e Menor). A grande sacada foi o uso do `realloc` para expandir o vetor de notas quando novos alunos eram adicionados após o relatório inicial.
+    * **Conceito chave:** Ordenação com `qsort`, lógica de frequência para moda e redimensionamento dinâmico de memória.
+
+* **Problema 3 (Separador Ímpar/Par com Expansão Manual):**
+    * **Lógica:** Implementação de um padrão clássico da computação: o **vetor dinâmico com crescimento exponencial**. Em vez de alocar um espaço gigante de uma vez, os vetores começam pequenos e dobram de capacidade (`capacidade * 2`) sempre que ficam cheios.
+    * **Conceito chave:** Leitura até o fim do arquivo (`EOF`) e gerenciamento eficiente de capacidade de memória para evitar múltiplas chamadas caras ao sistema operacional.
+
+---
+
+### 💡 Reflexão Geral:
+A alocação dinâmica é, sem dúvida, um divisor de águas. É onde o programador C ganha controle total (e responsabilidade total) sobre o hardware. O maior aprendizado aqui foi a disciplina: para cada `malloc`, deve haver um `free`. O uso do `realloc` me mostrou na prática como estruturas de dados famosas de outras linguagens funcionam por baixo dos panos.
+
+
+**Em todas as listas utilizei I.A para tirar dúvidas, principalmente sobre quais comandos usar para uma determinada tarefa expecífica**
